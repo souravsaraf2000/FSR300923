@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables | Forms</title>
+    <style>
+        #timetable{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 50%;
+            margin: 90px auto;
+            background-color: lightblue;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 20px 25px;
+            font-size: 20px;
+        }
+        #lunchBreak{
+            text-align: center;
+        }
+        caption{
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table id="timetable">
+        <caption>My Secret Time Table</caption>
+        <tr>
+            <td rowspan="6">Hours</td>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+            <td>English Lit.</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td>Arts</td>
+            <td>English Lit.</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td colspan="5" id="lunchBreak">Lunch Break</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+            <td>English Lit.</td>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td>Arts</td>
+            <td>English Lit.</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Sports</td>
+        </tr>
+    </table>
+</body>
+</html>

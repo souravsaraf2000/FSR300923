@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input{
+            width: 40%;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        p{
+            margin-bottom: 5px;
+        }
+
+        #submit{
+            width: 100px;
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <!-- <p>Full Name</p> -->
+        <input type="text" name="fullName" placeholder="Enter your name"/>
+        <!-- <p>Email</p> -->
+        <input type="email" name="email" placeholder="Enter your email"/>
+        <!-- <p>Confirm Password</p> -->
+        <input type="password" name = "pwd" placeholder="Enter your password"/>
+        <input type="submit" value="Register" id="submit"/>
+    </form>
+</body>
+</html>
