@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        /* form{
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        input{
+            width: 100%;
+        } */
+        body{
+            background-color: lightblue;
+        }
+        #heading{
+            text-align: center;
+        }
+
+        #regForm{
+            width: 30%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+        }
+        /* input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
+            width: 100%;
+        } */
+        .inp{
+            width: 100%;
+        }
+
+        #dropdown{
+            width: 100%;
+        }
+
+        #answer{
+            width: 100%;
+        }
+
+        #agreementDiv{
+            margin: 15px 0;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form>
+        <fieldset>
+            <legend>Login Info</legend>
+            <p>User Name</p>
+            <input type="text" name="" id="username"/>
+            <p>Email Id</p>
+            <input type="email" id="email"/>
+            <p>Password</p>
+            <input type="password" name="" id="pwd"/>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>Address:</p>
+            <input type="text" id="address"/>
+            <p>Mobile No: </p>
+            <input type="number" name="" id="mobile">
+            <p>Age:</p>
+            <input type="number" name="" id="age">
+        </fieldset>
+        <select>
+            <optgroup label="Cars">
+                <option value="">BMW</option>
+                <option value="">Rolls Royce</option>
+                <option value="">Maruti</option>
+            </optgroup>
+
+            <optgroup label="Fruits">
+                <option value="">Orange</option>
+                <option value="">Pineapple</option>
+                <option value="">Mango</option>
+            </optgroup>
+            <optgroup label="Anime Characters">
+                <option value="">Naruto</option>
+                <option value="">Goku</option>
+                <option value="">Kakashi</option>
+            </optgroup>
+        </select>
+
+        <input list="colors"/>
+        <datalist id="colors">
+            <option value="Blue">
+            <option value="Golden">
+            <option value="Orange">
+            <option value="Pink">
+            <option value="Green">
+            <option value="Black">
+            <option value="Cyan">
+            <option value="Yellow">
+            <option value="Maroon">
+            <option value="Magenta">
+        </datalist>
+        <input type="checkbox"/> 
+        <input type="color" name="" id="">
+        <input type="date" name="" id="">
+        <input type="file" />
+        <button type="reset">
+            Reset
+        </button>
+        <button type="submit">
+            Register
+        </button>
+    </form> -->
+    <h1 id="heading">Signup</h1>
+    <form id="regForm">
+        <p>Name</p>
+        <input type="text" name="name" id="name" class="inp" required autofocus>
+        <p>Email</p>
+        <input type="email" name="email" id="email" class="inp" required>
+        <p>Age</p>
+        <input type="number" name="age" id="age" class="inp" min="18" max="60" required>
+        <p>DoB</p>
+        <input type="date" name="dob" id="dob" min="1990-01-01" max="2002-12-31" required>
+        <p>Password</p>
+        <input type="password" name="pwd" id="pwd" class="inp" required>
+        <p>Confirm Password</p>
+        <input type="password" name="cnfPwd" id="cnfPwd" class="inp" required>
+        <p>Gender</p>
+        <input type="radio" name="gender" id=""> Male
+        <input type="radio" name="gender" id=""> Female
+        <input type="radio" name="gender" id=""> Others
+        <p>Security Question</p>
+        <div>
+            <select id="dropdown">
+                <option value="1">What is your birth place ?</option>
+                <option value="2">What is your favourite food item ?</option>
+                <option value="3">What is your mother maiden name ?</option>
+                <option value="4">Who is your favourite class mate ?</option>
+            </select>
+        </div>
+        <textarea id="answer" rows="8" ></textarea>
+        <div id="agreementDiv"> 
+            <input type="checkbox" id="agreement"/> I agree to accept terms and conditions
+        </div>
+        <button type="submit">
+            Register
+        </button>
+    </form>
+</body>
+</html>
